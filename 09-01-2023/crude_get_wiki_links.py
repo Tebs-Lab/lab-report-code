@@ -1,7 +1,5 @@
-# import required modules
 from bs4 import BeautifulSoup
 import requests
- 
 
 page = requests.get("https://en.wikipedia.org/wiki/Abraham_Lincoln") 
 soup = BeautifulSoup(page.content, 'html.parser')
